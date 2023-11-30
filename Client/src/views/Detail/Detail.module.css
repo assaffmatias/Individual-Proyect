@@ -1,0 +1,25 @@
+.divContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img {
+    padding: 3em;
+    width: 400px;
+    height: 400px;
+    margin-top: 2em;
+}
+
+.info, .description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    line-height: 1;
+    padding: 2em;
+    margin: 2em;
+    color: #1d1d1d;
+}
+
+.description{
+    max-width: 400px;
+}

@@ -1,0 +1,19 @@
+.divContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.divButton {
+    display: flex;
+}
+
+.button {
+    width: 5em;
+    height: 3em;
+    cursor: pointer;
+    margin: 1em;
+    border: none;
+    border-radius: 0.2em;
+    background-color:#ffff;
+}

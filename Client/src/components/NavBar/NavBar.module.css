@@ -1,0 +1,25 @@
+.divContainer {
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1d1d1d;
+    align-items: center;
+    height: 10vh;
+}
+
+.link {
+    font-weight: 900;
+    margin-top: 0.3em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.link:visited {
+    color: #ffff;
+}
+
+.img{
+    height: 20px;
+}

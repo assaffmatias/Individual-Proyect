@@ -1,0 +1,23 @@
+.divContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.selectDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 30px;
+    margin: 1em;
+    padding: 1em;
+    margin-left: 0;
+}
+
+.select {
+    background-color: #1d1d1d;
+    color: aliceblue;
+    font-family: monospace;
+    border: none;
+}
