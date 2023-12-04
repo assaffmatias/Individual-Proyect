@@ -15,7 +15,8 @@ const Home = () => {
 
     return (
         <div className={style.divContainer}>
-            {/* <SearchBar /> */}
+            <h1 className={style.h1}>Fórmula 1 <br />Drivers API</h1>
+            <h2 className={style.h2}>508 cards with information about formula one racers</h2>
             <CardsContainer />
         </div>
     )

@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { filterDrivers, orderDrivers, selectTeam } from "../../redux/actions";
 import style from "./FiteredCards.module.css"
-import SearchBar from "../SearchBar/SearchBar";
 
 const FilteredCards = () => {
     const teams = useSelector(state => state.teams)
@@ -24,7 +23,7 @@ const FilteredCards = () => {
 
     return (
         <div className={style.divContainer}>
-            <SearchBar></SearchBar>
+            
             <div className={style.selectDiv}>
                 <select className={style.select} onChange={handleFilter}>
                     <option value="all">All</option>
@@ -49,7 +48,6 @@ const FilteredCards = () => {
                     ))}
                 </select>
             </div>
-            
         </div>
     )
 }

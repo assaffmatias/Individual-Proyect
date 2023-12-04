@@ -1,25 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 .divContainer {
     font-family: monospace;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #1d1d1d;
+    justify-content: space-between;
+    background-color: #fff;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
+    padding: 1em;
+}
+
+.divLogo{
+    margin-left: 2em;
+}
+
+.divContent{
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
 }
 
 .link {
+    font-family: 'Nova Square', sans-serif;
     font-weight: 900;
-    margin-top: 0.3em;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
-    color: #ffff;
+    color: #1c1c1e;
 }
 
 .link:visited {
-    color: #ffff;
+    color: #1c1c1e;
 }
 
 .img{
-    height: 20px;
+    height: 30px;
+}
+
+.button{
+    background-color: #1c1c1e;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    width: 8em;
+    height: 2.5em;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #1c1c1e;
+    border: 2px solid #1c1c1e;
 }

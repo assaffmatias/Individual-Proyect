@@ -1,5 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ffff;
+    background: #fff;
+    overflow-x: hidden;
+    user-select: none;
 }

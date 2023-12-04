@@ -9,12 +9,12 @@
     color: #ffff;
     padding: 1em;
     margin: 1em;
+    margin-top: 4em;
     float: left
 };
 
 .content{
     display: flex;
-
 }
 
 .input{
@@ -26,17 +26,22 @@
     margin: 1em;
     border: none;
     border-bottom: 2px solid #1d1d1d;
+    background-color:  #fff;
+}
+
+.input::placeholder{
+    color: #1d1d1d;
 }
 
 .textarea{
-    margin-top: 2em;
+    margin-top: 1em;
     width: 400px;
     height: 300px;
     resize: none;
 }
 
 .select{
-    margin-top: 4.4em;
+    margin-top: 7em;
     width: 400px;
     height: 350px;
 }

@@ -15,7 +15,10 @@ const SearchBar = () => {
     return (
         <div className={style.divContainer}>
             <form className={style.form} action="">
-                <input className={style.input} onChange={handleSearch} type="text" name="" id="" placeholder="Name"/>
+                <input 
+                className={style.input} 
+                onChange={handleSearch} 
+                type="text" name="" id="" placeholder="Type a name"/>
             </form>
         </div>
     )

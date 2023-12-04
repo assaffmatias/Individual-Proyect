@@ -1,25 +1,46 @@
 .divContainer {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.divImg{
+    height: 80vh;
+    width: 36vw;
+    margin-left: 3em;
 }
 
 .img {
-    padding: 3em;
+    position: relative;
+    padding-top: 5em;
     width: 400px;
     height: 400px;
-    margin-top: 2em;
 }
 
-.info, .description {
+.info {
     display: flex;
     flex-direction: column;
-    font-size: 1em;
     line-height: 1;
-    padding: 2em;
-    margin: 2em;
+    padding-top: 3em;
+    margin-left: 2em;
     color: #1d1d1d;
+    float: left;
+    width: 30em;
 }
 
-.description{
+.description {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
     max-width: 400px;
+    margin-top: 3.5em;
+}
+
+.h1{
+    font-size: 3em;
+}
+
+.h2{
+    font-size: 1.9em;
 }

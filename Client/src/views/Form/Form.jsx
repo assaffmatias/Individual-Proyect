@@ -79,7 +79,7 @@ const Form = () => {
                 </div>
 
                 <div className={style.content}>
-                    <input type="text" value={form.surname} onChange={changeHandler} name='surname' className={style.input} placeholder='Lastname' />
+                    <input type="text" value={form.surname} onChange={changeHandler} name='surname' className={style.input} placeholder='Last name' />
                 </div>
 
                 <div className={style.content}>
