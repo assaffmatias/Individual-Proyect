@@ -3,8 +3,7 @@
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
-    margin-bottom: em;
-    margin-top: 8em;
+    margin-top: 2em;
 }
 
 .selectDiv {
@@ -18,8 +17,8 @@
 }
 
 .select {
-    background-color: #fff;
-    color: #1d1d1d;
+    background-color: #1d1d1d;
+    color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     border: 1px solid #101010;
     border-radius: 5px;

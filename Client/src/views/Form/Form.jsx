@@ -87,7 +87,11 @@ const Form = () => {
                 </div>
 
                 <div className={style.content}>
-                    <input type="text" value={form.image} onChange={changeHandler} name='image' className={style.input} placeholder='URL Image' />
+                    <input type="text" value={form.image} onChange={changeHandler} name='image' className={style.input} placeholder='https://url.com/image.jpg' />
+                </div>
+
+                <div className={style.content}>
+                    <input type="text" value={form.description} onChange={changeHandler} name='description' className={style.input} placeholder='Description' />
                 </div>
 
                 <div className={style.content}>
@@ -97,28 +101,18 @@ const Form = () => {
                 <button type="submit" className={style.button}>Create</button>
             </div>
 
-            <div className={style.form}>
-                <div className={style.content}>
-                    {/* <input type="text" value={form.description} onChange={changeHandler} name='description' className={style.input} /> */}
-                    <textarea name="description" value={form.description} id="" cols="30" rows="10" onChange={changeHandler} className={style.textarea} placeholder='Description'></textarea>
-                </div>
+            <div className={style.divSelect}>
 
-            </div>
+                <select name="teams" id="" value={form.teams} onChange={changeHandler} multiple className={style.select}>
 
-            <div>
-                <div className={style.content}>
+                    {teams.map((team) => (
+                        <option key={team.id} value={team.id} className={style.option}>
 
-                    <select name="teams" id="" value={form.teams} onChange={changeHandler} multiple className={style.select}>
+                            {team.name}
 
-                        {teams.map((team) => (
-                            <option key={team.id} value={team.id} className={style.option}>
-
-                                {team.name}
-
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                        </option>
+                    ))}
+                </select>
             </div>
         </form>
     )

@@ -1,54 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
-.divContainer {
-    font-family: monospace;
+.divContainer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #fff;
-    align-items: center;
-    height: 8vh;
-    padding: 1em;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 1em;
+    font-family: 'Lilita One', sans-serif;
 }
 
 .divLogo{
-    margin-left: 2em;
+    flex-grow: 1;
+    width: 33vw;
 }
 
-.divContent{
+.logo{
+    filter: grayscale(100%);
+    width: 70px;
+    padding-left: 1em;
+}
+
+.links{
     display: flex;
-    width: 40vw;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    width: 33vw;
+}
+
+.links2{
+    display: flex;
     justify-content: space-around;
+    margin-top: 1em;
 }
 
-.link {
-    font-family: 'Nova Square', sans-serif;
-    font-weight: 900;
-    font-size: 1.2em;
+.h1{
+    line-height: 0;
+}
+
+.link{
+    color: #858585;
     text-decoration: none;
-    color: #1c1c1e;
 }
 
-.link:visited {
-    color: #1c1c1e;
+.link:hover{
+    color: #1d1d1d;
+    text-decoration: underline;
 }
 
-.img{
-    height: 30px;
-}
-
-.button{
-    background-color: #1c1c1e;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    width: 8em;
-    height: 2.5em;
-}
-
-.button:hover{
-    background-color: transparent;
-    color: #1c1c1e;
-    border: 2px solid #1c1c1e;
+.search{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 33vw;
 }

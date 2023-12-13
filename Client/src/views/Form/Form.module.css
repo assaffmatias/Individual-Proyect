@@ -1,23 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 .form {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    /* background-color: aqua  ; */
     align-items: center;
-    color: #ffff;
+    color: #fafafa;
     padding: 1em;
-    margin: 1em;
-    margin-top: 4em;
+    width: 60vw;
     float: left
 };
+
+.divSelect{
+    display: flex;
+}
 
 .content{
     display: flex;
 }
 
 .input{
+    font-family: 'Lilita One', sans-serif;
     display: flex;
     font-size: 1em;
     font-weight: 100;
@@ -26,11 +29,11 @@
     margin: 1em;
     border: none;
     border-bottom: 2px solid #1d1d1d;
-    background-color:  #fff;
+    background-color:  #fafafa;
 }
 
 .input::placeholder{
-    color: #1d1d1d;
+    color: #636363;
 }
 
 .textarea{
@@ -38,12 +41,17 @@
     width: 400px;
     height: 300px;
     resize: none;
+    background-color: #1d1d1d;
+    color: #fff;
 }
 
 .select{
-    margin-top: 7em;
+    font-family: 'Lilita One', sans-serif;
     width: 400px;
-    height: 350px;
+    height: 450px;
+    margin-top: 2em;
+    background-color: #1d1d1d;
+    color: #fff;
 }
 
 .input:focus {
@@ -64,9 +72,34 @@
     height: 3em;
     transition: 0.7s;
     margin: 2em;
+    font-family: 'Lilita One', sans-serif;
 }
 
 .button:hover{
     background-color: #1d1d1d;
     color: #ffff;
 }
+
+.select::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .select::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .select::-webkit-scrollbar-thumb {
+    background-color: #f47e26;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #f47e26;  /* creates padding around scroll thumb */
+  }
+
+  .option:checked{
+    background-color: #f47e26;
+    color: #1d1d1d;
+  }
+
+  .option::selection{
+    background-color: #f47e26;
+    color: #1d1d1d;
+  }

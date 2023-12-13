@@ -14,20 +14,21 @@ const NavBar = () => {
         <div className={style.divContainer}>
             <div className={style.divLogo}>
                 <Link to={PATHROUTES.HOME}>
-                    <img src={logo} alt="" className={style.img} />
+                    <img src={logo} alt="" className={style.logo} />
                 </Link>
             </div>
-            <div className={style.divContent} >
+            <div className={style.links} >
+                <h1 className={style.h1}>#Drivers API</h1>
+                <div className={style.links2}>
+                    <Link className={style.link} to={PATHROUTES.HOME}>Home</Link>
+                    <Link className={style.link} to={PATHROUTES.FORM}>Create Driver</Link>
+                    <Link className={style.link} to={PATHROUTES.ABOUT}>About</Link>
+                    <Link className={style.link} to={PATHROUTES.LANDING}>Come Back</Link>
+                </div>
+            </div>
+            <div className={style.search}>
                 <SearchBar></SearchBar>
-                <Link className={style.link} to={PATHROUTES.FORM}>
-                    <button className={style.button}>Create Driver</button>
-                </Link>
-                <Link className={style.link} to={PATHROUTES.LANDING}>
-                    <button className={style.button}>Outside</button>
-                </Link>
             </div>
-
-
         </div>
     )
 }

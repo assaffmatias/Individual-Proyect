@@ -12,7 +12,7 @@ const CardsContainer = () => {
     const selectedTeam = useSelector(state => state.selectedTeam)
 
     const [page, setPage] = useState(1);
-    const [perPage, setPerPage] = useState(9) 
+    const [perPage, setPerPage] = useState(3) 
 
 
     const filteredDrivers = drivers.filter((driver) => {
@@ -23,14 +23,14 @@ const CardsContainer = () => {
     });
 
     return (
-        <div className={style.divContainer}>
-            <FilteredCards />
+        <>
+        <section className={style.slider}>
+            {/* <FilteredCards /> */}
             {filteredDrivers
                 .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
                 .map(driver => {
                     
                     return (
-                        <div key={driver.id} className={style.card}>
                             <Card
                                 id={driver.id}
                                 name={driver.name}
@@ -38,14 +38,14 @@ const CardsContainer = () => {
                                 image={driver.image}
                                 teams={driver.teams}
                             />
-                        </div>
                     )
                 })}
             <div>
-                <Paginated page={page} setPage={setPage} />
             </div>
 
-        </div>
+        </section>
+                <Paginated page={page} setPage={setPage} />
+        </>
     )
 
 }
