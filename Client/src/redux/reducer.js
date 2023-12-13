@@ -24,7 +24,7 @@ const rootReducer = (state = initialState, action) => {
 
         case FILTER:
             let filterValue;
-            
+
             action.payload === "all" ? filterValue = null
                 : action.payload === "created" ? filterValue = true
                     : action.payload === "notCreated" ? filterValue = false
@@ -33,8 +33,9 @@ const rootReducer = (state = initialState, action) => {
             return { ...state, filterCreated: filterValue }
 
         case ORDER:
-            let orderedDrivers;
 
+            let orderedDrivers;
+            
             action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
                 : action.payload === "nameFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => b.name.localeCompare(a.name))
                     : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))

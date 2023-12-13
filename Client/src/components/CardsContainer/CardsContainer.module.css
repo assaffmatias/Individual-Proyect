@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.contain{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5em;
+}
+
+.order{
+  margin-right: 0.5em;
+}
+
 .slider{
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: black; */
-    height: 70vh;
+    height: 65vh;
+  }
+
+  .h1{
+    font-family: 'Lilita One', sans-serif;
+    color: #f47e26;
+    font-size: 1em;
+    text-align: center;
   }

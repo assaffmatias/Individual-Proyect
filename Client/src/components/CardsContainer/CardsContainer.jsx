@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import style from "./CardsContainer.module.css"
 import { useState } from "react";
 import Paginated from "../Paginated/Paginated";
-import FilteredCards from "../FilteredCards/FiteredCards";
+import Filter from "../Filter/Filter"
+import Order from "../Order/Order";
 
 const CardsContainer = () => {
 
@@ -12,40 +13,55 @@ const CardsContainer = () => {
     const selectedTeam = useSelector(state => state.selectedTeam)
 
     const [page, setPage] = useState(1);
-    const [perPage, setPerPage] = useState(3) 
+    const [perPage, setPerPage] = useState(3)
 
 
     const filteredDrivers = drivers.filter((driver) => {
         const meetsCreationFilter = filterCreated === null || driver.created === filterCreated;
         const meetsTeamFilter = !selectedTeam || (driver.teams && driver.teams.includes(selectedTeam));
-    
+
         return meetsCreationFilter && meetsTeamFilter;
     });
 
     return (
-        <>
-        <section className={style.slider}>
-            {/* <FilteredCards /> */}
-            {filteredDrivers
-                .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
-                .map(driver => {
-                    
-                    return (
-                            <Card
-                                id={driver.id}
-                                name={driver.name}
-                                surname={driver.surname}
-                                image={driver.image}
-                                teams={driver.teams}
-                            />
-                    )
-                })}
-            <div>
+        <div className={style.container}>
+
+            <div className={style.contain}>
+                <div className={style.filter}>
+                    <h1 className={style.h1}>Filter by</h1>
+                    <Filter />
+                </div>
+
+                <div className={style.section}>
+                    <section className={style.slider}>
+                        {filteredDrivers
+                            .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
+                            .map(driver => {
+                                return (
+                                    <Card
+                                        id={driver.id}
+                                        name={driver.name}
+                                        surname={driver.surname}
+                                        image={driver.image}
+                                        teams={driver.teams}
+                                    />
+                                )
+                            })}
+                    </section>
+                </div>
+
+                <div className={style.order}>
+                    <h1 className={style.h1}>Order by</h1>
+                    <Order />
+                </div>
             </div>
 
-        </section>
+
+            <div className={style.paginated}>
                 <Paginated page={page} setPage={setPage} />
-        </>
+            </div>
+
+        </div>
     )
 
 }

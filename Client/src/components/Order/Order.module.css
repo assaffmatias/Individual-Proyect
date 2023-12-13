@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.select {
+    height: 2.5em;
+    width: 8em;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Lilita One', sans-serif;
+    border: 1px solid #101010;
+    border-radius: 2px;
+    margin: 0.5em;
+}

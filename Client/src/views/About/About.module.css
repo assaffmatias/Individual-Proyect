@@ -6,6 +6,12 @@
     height: 100vh;
 }
 
+.logo{
+  width: 4.8em;
+    height: 4.8em;
+    border-radius: 15px;
+}
+
 .card {
     width: 17em;
     height: 22.5em;
