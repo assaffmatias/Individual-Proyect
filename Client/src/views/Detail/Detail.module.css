@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika&display=swap');
 
 
 .container{
     display: flex;
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Signika', sans-serif;
     margin-top: 1em;
 }
 
@@ -28,11 +28,11 @@
 .h1{
     text-align: center;
     font-size: 3em;
+    font-weight: 100;
 }
 
 .description{
     display: flex;
-    /* background-color: beige; */
     justify-content: space-evenly;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .button{
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Signika', sans-serif;
     height: 2em;
     font-weight: 700;
     font-size: 1.2em;

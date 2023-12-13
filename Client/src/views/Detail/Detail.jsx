@@ -39,7 +39,7 @@ const Detail = () => {
                                 <h1 className={style.h1}>{driver.name} {driver.surname}</h1>
                                 <div className={style.description}>
                                     <button className={style.button} onClick={handleInfoClick}>Info</button>
-                                    <button className={style.button} onClick={handleDescriptionClick}>Descripción</button>
+                                    <button className={style.button} onClick={handleDescriptionClick}>Description</button>
                                 </div>
                                 <div className={style.show}>
                                     {showInfo ? (

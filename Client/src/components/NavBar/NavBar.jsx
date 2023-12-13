@@ -23,7 +23,6 @@ const NavBar = () => {
                     <Link className={style.link} to={PATHROUTES.HOME}>Home</Link>
                     <Link className={style.link} to={PATHROUTES.FORM}>Create Driver</Link>
                     <Link className={style.link} to={PATHROUTES.ABOUT}>About</Link>
-                    <Link className={style.link} to={PATHROUTES.LANDING}>Come Back</Link>
                 </div>
             </div>
             <div className={style.search}>

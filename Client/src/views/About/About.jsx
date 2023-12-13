@@ -1,5 +1,5 @@
 import styles from './About.module.css'
-import logo from '../../../public/me.jpg'
+import logo from '../../../public/avatar.jpg'
 
 const About = () => {
     return (
