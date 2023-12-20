@@ -6,8 +6,8 @@ const Filter = () => {
     const teams = useSelector(state => state.teams)
     const dispatch = useDispatch();
 
-    const handleFilter = (event) => {
-        const value = event.target.value;
+    const handleFilter = (value) => {
+        // const value = event.target.value;
         dispatch(filterDrivers(value))
     };
 
@@ -18,16 +18,11 @@ const Filter = () => {
 
     return (
         <>
-            <select className={style.select} onChange={handleFilter}>
-                <option value="all">All</option>
-                <option value="created">Created</option>
-                <option value="notCreated">Not Created</option>
-            </select>
+            <div className={style.filtered} onClick={() => handleFilter("all")} role="button">All Drivers</div>
+            <div className={style.filtered} onClick={() => handleFilter("created")} role="button">Created</div>
+            <div className={style.filtered} onClick={() => handleFilter("notCreated")} role="button">Not Created</div>
 
             <select className={style.select} name="" id="" onChange={handleFilterTeam}>
-                <option value="" disabled>Select a team</option>
-                <option value="">None</option>
-
                 {teams.map((team) => (
                     <option key={team.name} value={team.name}>
                         {team.name}

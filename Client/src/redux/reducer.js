@@ -34,15 +34,18 @@ const rootReducer = (state = initialState, action) => {
 
         case ORDER:
 
-            let orderedDrivers;
-            
-            action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
+            if(action.payload === 'default'){
+                return { ...state, drivers: state.drivers };
+            } else{   
+                let orderedDrivers;
+                
+                action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
                 : action.payload === "nameFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => b.name.localeCompare(a.name))
-                    : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))
-                        : action.payload === "dobFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(b.dob) - new Date(a.dob))
-                            : undefined
-
-            return { ...state, drivers: orderedDrivers }
+                : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))
+                : action.payload === "dobFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(b.dob) - new Date(a.dob))
+                : undefined
+                return { ...state, drivers: orderedDrivers }
+            }
 
         case SELECT_TEAM:
             return { ...state, selectedTeam: action.payload }

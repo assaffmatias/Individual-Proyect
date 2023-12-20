@@ -5,20 +5,19 @@ import { orderDrivers } from '../../redux/actions';
 const Order = () => {
     const dispatch = useDispatch()
 
-    const handleOrder = (event) => {
-        const value = event.target.value;
-        dispatch(orderDrivers(value));
+    const handleOrder = (value) => {
+        // const value = event.target.value;
+        value === 'default' ? dispatch(orderDrivers())
+        : dispatch(orderDrivers(value));
     };
 
     return (
         <>
-            <select className={style.select} onChange={handleOrder}>
-                <option value="default">Default</option>
-                <option value="nameUpward">Name Upward</option>
-                <option value="nameFalling">Name Falling</option>
-                <option value="dobUpward">Date of Birth Upward</option>
-                <option value="dobFalling">Date of Birth Falling</option>
-            </select>
+            {/* <div className={style.ordered} onClick={() => handleOrder("default")}>Default</div> */}
+            <div className={style.ordered} onClick={() => handleOrder("nameUpward")} role='button'>Name Upward</div>
+            <div className={style.ordered} onClick={() => handleOrder("nameFalling")} role='button'>Name Falling</div>
+            <div className={style.ordered} onClick={() => handleOrder("dobUpward")} role='button'>Date Upward</div>
+            <div className={style.ordered} onClick={() => handleOrder("dobFalling")} role='button'>Date Falling</div>
         </>
     )
 }

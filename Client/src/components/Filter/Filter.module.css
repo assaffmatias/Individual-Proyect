@@ -1,26 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 .select {
-    height: 2.5em;
-    width: 8em;
-    background-color: #1d1d1d;
-    color: #fff;
-    font-family: 'Lilita One', sans-serif;
-    border: 1px solid #101010;
-    border-radius: 2px;
-    margin: 0.5em;
+  height: 2.5em;
+  width: 8em;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-family: 'Lilita One', sans-serif;
+  border: 1px solid #101010;
+  border-radius: 2px;
+  margin: 0.5em;
+}
+
+.filtered {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+  line-height: 2em;
+  margin-left: 1em;
+  text-align: start;
+}
+
+.filtered:hover {
+  text-decoration-line: underline;
 }
 
 .select::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  .select::-webkit-scrollbar-track {
-    background: transparent;        /* color of the tracking area */
-  }
-  
-  .select::-webkit-scrollbar-thumb {
-    background-color: #f47e26;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #f47e26;  /* creates padding around scroll thumb */
-  }
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+.select::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+.select::-webkit-scrollbar-thumb {
+  background-color: #858585;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #858585;
+  /* creates padding around scroll thumb */
+}

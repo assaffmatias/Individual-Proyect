@@ -1,71 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+.container{
+  background-color: #FFFFFF;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 
-
-.divContainer {
-    font-family: monospace;
-    padding: 0;
-    margin: 0;
-    /* background-image: url('../../../public/Background.jpg'); */
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    max-width: 100vw;
-    max-height: 100vh;
-    user-select: none;
-    background-color: #fff;
 }
 
-.img{
-    width: 50vw;
-    height: 100vh;
+.nav{
+  display: flex;
+  margin-top: 3em;
+  margin-left: 3em;
+  justify-content: space-between;
 }
 
-.divButton{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50vw;
-    height: 100vh;
-    border-left: 1px solid #1d1d1d;
+.logo{
+  filter: grayscale(100%);
+  width: 80px;
+  height: 20px;
 }
 
-.h1{
-    font-family: 'Titan One', sans-serif;
-    font-size: 6em;
-    color: #252525;
-    align-self: center;
+.content{
+  display: flex;
+  justify-content: center;
+  height: 400px;
 }
 
-.h3{
-    font-family: 'Monoton', sans-serif;
-    align-self: center;
-    font-size: 2em;
-    color: #1d1d1d;
-    font-weight: 100;
-    
+.gif{
+  object-fit: cover;
+  background-color: transparent;
+  margin-bottom: 5em;
 }
 
+.footer{
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+}
 
-.link{
-    align-self: center;
+.teams{
+  width: 70px;
 }
 
 .button {
-    color: #f0f8ff;
-    background-color: #1d1d1d;
-    border: none;
-    width: 10em;
-    height: 3em;
-    border-radius: 10em;
-    cursor: pointer;
-    font-weight: 100;
-    transition: 0.7s;
-    margin: 4em;
-}
+  position: relative;
+  margin-right: 3em;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+ }
+ 
+ .button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #ee2128;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .button span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1d1d1d;
+ }
+ 
+ .button svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #1d1d1d;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .button:hover:before {
+  width: 100%;
+  background: #ec0a12;
+ }
+ 
+ .button:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .button:active {
+  transform: scale(0.95);
+ }
 
-.button:hover{
-    color: #1d1d1d;
-    background-color: #f47e26;
-}

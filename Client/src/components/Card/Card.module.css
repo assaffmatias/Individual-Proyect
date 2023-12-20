@@ -4,11 +4,11 @@
     object-fit: cover;
     filter: blur(2px);
     transition: 1s;
-    margin: 1em;
+    margin: 0.3em;
 }
 
 .img:hover{
     filter: none;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }

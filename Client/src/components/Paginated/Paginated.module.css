@@ -10,13 +10,23 @@
     display: flex;
 }
 
-.button {
-    width: 5em;
+.next, .prev {
+    width: 2.5em;
     height: 3em;
     cursor: pointer;
-    margin: 1em;
+    margin: 2em;
     border: none;
-    border-radius: 0.2em;
-    background-color:#ffff;
-    font-family: 'Lilita One', sans-serif;
+    background: transparent;
+}
+
+.next{
+    transform: rotate(90deg);
+}
+
+.prev{
+    transform: rotate(-90deg);
+}
+
+.next{
+
 }

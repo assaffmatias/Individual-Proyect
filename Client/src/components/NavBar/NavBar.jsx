@@ -13,7 +13,7 @@ const NavBar = () => {
     return (
         <div className={style.divContainer}>
             <div className={style.divLogo}>
-                <Link to={PATHROUTES.HOME}>
+                <Link to={PATHROUTES.LANDING}>
                     <img src={logo} alt="" className={style.logo} />
                 </Link>
             </div>

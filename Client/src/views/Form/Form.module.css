@@ -3,7 +3,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    /* background-color: aqua  ; */
     align-items: center;
     color: #fafafa;
     padding: 1em;
@@ -73,11 +72,13 @@
     transition: 0.7s;
     margin: 2em;
     font-family: 'Lilita One', sans-serif;
+    background-color: #1d1d1d;
+    color: #fff;
 }
 
 .button:hover{
-    background-color: #1d1d1d;
-    color: #ffff;
+    background-color: #ec0a12;
+    color: #fff;
 }
 
 .select::-webkit-scrollbar {
@@ -89,17 +90,17 @@
   }
   
   .select::-webkit-scrollbar-thumb {
-    background-color: #f47e26;    /* color of the scroll thumb */
+    background-color: #858585;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #f47e26;  /* creates padding around scroll thumb */
+    border: 3px solid #858585;  /* creates padding around scroll thumb */
   }
 
-  .option:checked{
-    background-color: #f47e26;
-    color: #1d1d1d;
+  /* .option:checked{
+    background-color: #e00500;
+    color: #fff;
   }
 
   .option::selection{
-    background-color: #f47e26;
-    color: #1d1d1d;
-  }
+    background-color: #e00500;
+    color: #fff;
+  } */
